@@ -4,9 +4,9 @@ pipeline {
 
    stages {
    
-     stage('Install Dependencies') { 
+     stage('maven') { 
         steps { 
-           sh 'npm install' 
+           sh 'clean install' 
         }
      }
      
